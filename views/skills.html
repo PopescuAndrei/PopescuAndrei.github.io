@@ -1,7 +1,9 @@
 <h2>Skills</h2>
 <div class="skills">
-    <div class="item-skills" ng-repeat="skill in skills" data-percent="{{skill.level}}">{{skill.name}}</div>
-    <div class="skills-legend clearfix">
+    <div ng-repeat="skill in skills">
+      <div class="item-skills" ng-attr-data-percent="{{skill.level}}">{{skill.name}}</div>
+    </div>
+    <div class="skills-legend clearfix" on-init="callback"> 
         <div class="legend-left legend">Beginner</div>
         <div class="legend-left legend"><span>Proficient</span></div>
         <div class="legend-right legend"><span>Expert</span></div>

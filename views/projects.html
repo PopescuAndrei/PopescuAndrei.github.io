@@ -1,47 +1,46 @@
 <div class="box">
-  <div class="row">
-      <div class="col-lg-12 text-center">
-          <h2>Portfolio</h2>
-        <hr class="star-primary">
-      </div>
-    </div>
-     <div class="row" ng-repeat="rows in projects">
-        <!-- Start Card-->
-        <div class="col-sm-4 portfolio-item" ng-repeat="project in rows" style="margin-bottom:10px;">
-          <a href="#portfolioModal{{project.id}}" class="portfolio-link" data-toggle="modal">
-              <div class="caption">
-                  <div class="caption-content">
-                      <i class="fa fa-search-plus fa-3x"></i>
-                  </div>
-              </div>
-              <img ng-src="{{project.image}}" class="img-responsive" alt="">
-          </a>
-
-          <!-- Portfolio Modal -->
-          <div class="portfolio-modal modal fade" id="portfolioModal{{project.id}}" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-content">
-                  <div class="close-modal" data-dismiss="modal">
-                      <div class="lr">
-                          <div class="rl">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-lg-8 col-lg-offset-2">
-                              <div class="modal-body">
-                                  <h2>{{project.title}}</h2>
-                                  <hr class="star-primary">
-                                  <img ng-src="{{project.image}}" class="img-responsive img-centered" alt="">
-                                  <p>{{project.description}}</p>
-                                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2>Portfolio</h2>
+            <hr class="star-primary">
         </div>
-        <!-- END CARD -->
-     </div>
+    </div>
+    <div class="row" ng-repeat="rows in projects">
+        <!-- Card-->
+        <div class="col-sm-4 portfolio-item" ng-repeat="project in rows" style="margin-bottom:10px;">
+            <a href="#portfolioModal{{project.id}}" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                    <div class="caption-content">
+                        <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img ng-src="{{project.image}}" class="img-responsive" alt="">
+            </a>
+
+            <!-- Portfolio Modal -->
+            <div class="portfolio-modal modal fade" id="portfolioModal{{project.id}}" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <div class="modal-body">
+                                    <h2>{{project.title}}</h2>
+                                    <hr class="star-primary">
+                                    <img ng-src="{{project.image}}" class="img-responsive img-centered" alt="">
+                                    <p>{{project.description}}</p>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Modal -->
+        </div><!-- End Card -->
+    </div>
 </div>
