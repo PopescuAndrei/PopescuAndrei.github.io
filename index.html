@@ -23,18 +23,7 @@
       <div class="row">
       		<div class="col-xs-12 col-sm-7">
       				<!-- EDUCATION -->
-      				<div class="box">
-      						<h2>Education</h2>
-      						<ul id="education" class="clearfix">
-      								<li ng-repeat="year in years">
-      										<div class="year pull-left">{{year.year}}</div>
-      										<div class="description pull-right">
-      												<h3>{{year.title}}</h3>
-      												<p>{{year.description}}</p>
-      										</div>
-      								</li>
-      						</ul>
-      				</div>
+      				<div class="box" ng-include="'views/education.html'" ng-controller="EducationController"></div>
       				<!-- EXPERIENCES -->
       				<div class="box">
       						<h2>Experiences</h2>
@@ -120,6 +109,7 @@
 <script type="text/javascript" src="js/global.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/controller/HeaderController.js"></script>
+<script type="text/javascript" src="js/controller/EducationController.js"></script>
 <script type="text/javascript" src="js/controller/ProjectsController.js"></script>
 <script type="text/javascript" src="js/controller/SkillsController.js"></script>
 </html>
