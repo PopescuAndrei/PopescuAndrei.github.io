@@ -16,7 +16,7 @@ cvApp.controller('ProjectsController', ['$scope', function ProjectsController($s
           "id": 3,
           "tag":"C++",
           "title": "Circus",
-          "image": "img/portfolio/Circus.png",
+          "image": "img/portfolio/circus.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia."
       }],
       [{
