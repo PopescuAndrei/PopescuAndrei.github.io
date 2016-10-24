@@ -33,13 +33,30 @@ CONTAINER
   margin-bottom: 15px;
   background: #fff;
 }
+
+#mainHeader {
+  background: none;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+#navContainer {
+  background: none;
+}
+
+#pageContainer {
+  margin-top: 30px;
+}
 /*******************************************
 PHOTO (AVATAR)
 *******************************************/
 #photo-header{
   margin-top: -75px;
 }
+
 #photo{
+  position:relative;
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -68,8 +85,13 @@ PHOTO (AVATAR)
   line-height: 1.5em;
 }
 #text-header h1 span{
-  color: #F0563D;
+  color: #333;
 }
+
+.fa {
+  color: #18BC9C;
+}
+
 #text-header h1 sup{
   opacity: 0.5;
 }
@@ -81,10 +103,6 @@ PHOTO (AVATAR)
   content: '';
   display: block;
 }
-
-.header-well{
-  margin-top: 100px;
-}
 /*******************************************
 DEFAULT BOX
 *******************************************/
@@ -92,7 +110,7 @@ DEFAULT BOX
   margin-bottom: 15px;
 }
 .box h2{
-  color: #EC7263;
+  color: #18BC9C;
   font-size: 1.8em;
   font-weight: 700;
   text-transform: uppercase;
@@ -121,13 +139,13 @@ EDUCATION
   top: 0;
   content: ' ';
   display: block;
-  background: #ec7263;
-  background: -moz-linear-gradient(top,  #ffffff 0%, #ec7263 7%, #ec7263 89%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#ec7263), color-stop(89%,#ec7263), color-stop(100%,#ffffff));
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
-  background: -o-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
-  background: -ms-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
+  background: #18BC9C;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #18BC9C 7%, #18BC9C 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#18BC9C), color-stop(89%,#18BC9C), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#18BC9C 7%,#18BC9C 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#18BC9C 7%,#18BC9C 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#18BC9C 7%,#18BC9C 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#18BC9C 7%,#18BC9C 89%,#ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 #education li{
@@ -239,7 +257,7 @@ SKILLS
 *******************************************/
 .item-skills{
   height: 30px;
-  background: #F0563D;
+  background: #333;
   color: #fff;
   padding: 5px 10px;
   margin-bottom: 5px;

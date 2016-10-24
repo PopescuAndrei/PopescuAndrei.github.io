@@ -18,25 +18,44 @@ cvApp.controller('ProjectsController', ['$scope', function ProjectsController($s
           "title": "Circus",
           "image": "img/portfolio/circus.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia."
-      }],
-      [{
+      },{
           "id": 4,
           "tag":"Python",
           "title": "Game",
           "image": "img/portfolio/game.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia."
-      }, {
+      }],
+      [{
           "id": 5,
+          "tag":"Python",
+          "title": "Game",
+          "image": "img/portfolio/game.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia."
+      }, {
+          "id": 6,
           "tag":"HTML, CSS",
           "title": "Safe",
           "image": "img/portfolio/safe.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia."
       }, {
-          "id": 6,
+          "id": 7,
+          "tag":"PHP",
+          "title": "Submarine",
+          "image": "img/portfolio/submarine.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia."
+      }, {
+          "id": 8,
           "tag":"PHP",
           "title": "Submarine",
           "image": "img/portfolio/submarine.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia."
       }]
   ];
+
+  $scope.projectsHidden = true;
+
+  $scope.hide = function() {
+      $scope.projectsHidden = !$scope.projectsHidden;
+  }
+
 }]);
