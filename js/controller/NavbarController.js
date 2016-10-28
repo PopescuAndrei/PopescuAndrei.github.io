@@ -2,16 +2,17 @@ cvApp.controller('NavbarController', ['$scope', function NavbarController($scope
     $scope.items = [
       {
         "title":"About Me",
-        "section":"aboutMe-section"
-      }, {
-        "title":"Experience",
-        "section":"experience-section"
+        "section":"1"
       }, {
         "title":"Education",
-        "section":"education-section"
+        "section":"2"
+      }
+      , {
+        "title":"Experience",
+        "section":"3"
       }, {
         "title":"Projects",
-        "section":"projects-section"
+        "section":"4"
       }
     ];
 }]);

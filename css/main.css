@@ -41,6 +41,13 @@ CONTAINER
   padding-bottom: 10px;
 }
 
+#mainNav {
+  background-color: #212121;
+  padding-left: 15px; 
+  padding-right: 15px;
+  border-width: 0 0 0px;
+}
+
 #navContainer {
   background: none;
 }
@@ -89,7 +96,7 @@ PHOTO (AVATAR)
 }
 
 .fa {
-  color: #18BC9C;
+  color: #673AB7;
 }
 
 #text-header h1 sup{
@@ -110,7 +117,7 @@ DEFAULT BOX
   margin-bottom: 15px;
 }
 .box h2{
-  color: #18BC9C;
+  color: #673AB7;
   font-size: 1.8em;
   font-weight: 700;
   text-transform: uppercase;
@@ -139,13 +146,13 @@ EDUCATION
   top: 0;
   content: ' ';
   display: block;
-  background: #18BC9C;
-  background: -moz-linear-gradient(top,  #ffffff 0%, #18BC9C 7%, #18BC9C 89%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#18BC9C), color-stop(89%,#18BC9C), color-stop(100%,#ffffff));
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#18BC9C 7%,#18BC9C 89%,#ffffff 100%);
-  background: -o-linear-gradient(top,  #ffffff 0%,#18BC9C 7%,#18BC9C 89%,#ffffff 100%);
-  background: -ms-linear-gradient(top,  #ffffff 0%,#18BC9C 7%,#18BC9C 89%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #ffffff 0%,#18BC9C 7%,#18BC9C 89%,#ffffff 100%);
+  background: #673AB7;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #673AB7 7%, #673AB7 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#673AB7), color-stop(89%,#673AB7), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#673AB7 7%,#673AB7 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#673AB7 7%,#673AB7 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#673AB7 7%,#673AB7 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#673AB7 7%,#673AB7 89%,#ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 #education li{
@@ -312,9 +319,8 @@ SKILLS
 .legend-right{
   text-align: right;
 }
-/*******************************************
-LANGUAGES
-*******************************************/
+
+/**LANGUAGES**/
 #language-skills .skill{
   font-size: 1.3em;
   margin: 10px 0;
@@ -329,9 +335,8 @@ LANGUAGES
 #language-skills .skill .icons-red{
   background: url(../img/star-red.png) no-repeat;
 }
-/*******************************************
-HOBBIES
-*******************************************/
+
+/**HOBBIES**/
 .hobby{
   color: #fff;
   display: inline-block;
@@ -351,9 +356,8 @@ HOBBIES
   top: 6px;
   left: 7px;
 }
-/*******************************************
-MEDIA
-*******************************************/
+
+/**MEDIA**/
 @media (min-width: 500px) {
   #education .description{
     width: 85%;
@@ -373,4 +377,30 @@ MEDIA
   #education .description{
     width: 90%;
   }
+}
+
+/** Navbar Colors **/
+.navbar-default .navbar-nav>li:hover {
+  background-color: #673AB7;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-size: 15px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #673AB7;
+}
+
+/**Animation**/
+.sample-show-hide {
+  transition: all linear 0.5s;
+}
+.sample-show-hide.ng-hide {
+  opacity: 0;
 }

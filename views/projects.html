@@ -1,10 +1,11 @@
 <div class="row">
 	<div class="col-lg-12 text-center">
-		<h2>Portfolio <button class="btn btn-primary" ng-click="hide()">Show Div</button></h2>
+		<h2>Portfolio </h2>
+		<button ng-click="hide()"> Click to show/hide the projects</button>
 		<hr class="star-primary">
 	</div>
 </div>
-<div ng-show="projectsHidden" class="ng-hide">
+<div ng-show="projectsHidden" class="sample-show-hide" ng-hide="isProjectsSectionVisible" ng-animate="'animate'">
 	<div class="row" ng-repeat="rows in projects">
 		<!-- Card-->
 		<div class="col-sm-3 portfolio-item" ng-repeat="project in rows" style="margin-bottom:20px;">
@@ -29,6 +30,10 @@
 									<hr class="star-primary">
 									<img ng-src="{{project.image}}" class="img-responsive img-centered" alt="">
 									<p>{{project.description}}</p>
+									
+									<h4>Made with:</h4>
+									<p> <i ng-repeat="technology in project.technologies" class="{{technology.icon}}"> {{technology.name}}</i> </p>
+									</hr>
 									<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
 								</div>
 							</div>
